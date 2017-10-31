@@ -21,34 +21,38 @@ session_unset();
     <body>
         <div class="container">
             <h1>Please login to play the math game</h1>
-            
+
             <form class="form-horizontal" action="authenticate.php" method="post">
-                <div class="row text-center">
-                    <div class="col-xs-3 text-right">
-                        <label for="email">Email: </label>
-                    </div>
-                    <div class="col-xs-9 text-left">
-                        <input type="text" name="email" id="email" placeholder="Email" />
+                <div class="form-group">
+                    <div class="row text-center">
+                        <div class="col-xs-3 text-right">
+                            <label for="email">Email: </label>
+                        </div>
+                        <div class="col-xs-6 text-left">
+                            <input class="form-control" type="text" name="email" id="email" placeholder="Email" />
+                        </div>
                     </div>
                 </div>
-                <div class="row text-center">
-                    <div class="col-xs-3 text-right">
-                        <label for="password">Password: </label>
-                    </div>
-                    <div class="col-xs-9 text-left">
-                        <input type="password" name="password" id="password" placeholder="Password"/>
+                <div class="form-group">
+                    <div class="row text-center">
+                        <div class="col-xs-3 text-right">
+                            <label for="password">Password: </label>
+                        </div>
+                        <div class="col-xs-6 text-left">
+                            <input class="form-control" type="password" name="password" id="password" placeholder="Password"/>
+                        </div>
                     </div>
                 </div>
                 <div class="col-xs-offset-3">
-                    <input type="submit" class="btn btn-primary" />
+                    <button type="submit" class="btn btn-primary">Submit</button>
                 </div>
             </form>
             <div class="col-xs-offset-3 error_message">
-            <?
-            if ($error) {
-                echo "Invalid login credentials";
-            }
-            ?>
+                <?
+                if ($error) {
+                    echo "Invalid login credentials";
+                }
+                ?>
             </div>
         </div>
     </body>
