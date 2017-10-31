@@ -8,7 +8,7 @@ $num1 = rand(0, 50);
 $num2 = rand(0, 50);
 
 $operator = array("+", "-", "*");
-$index = rand(0, sizeof($operator) - 1); 
+$index = rand(0, sizeof($operator) - 1);
 
 $answer;
 switch($index) {
@@ -68,29 +68,27 @@ switch($index) {
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <hr>
-                            <div class="col-sm-12">
-                                <form action="./validate.php" method="post">
-                                    <div class="form-group">
-                                        <label for="answer">
-                                            <h3>Answer:</h3>
-                                        </label>
-                                        <input class="form-control" type="text" name="userAnswer" id=answer autocomplete="off">
-                                        <input class="form-control btn btn-primary" type="submit" name="submit" value="Submit">
-                                        <input type="hidden" name="answer" value='<?php echo $answer?>'>
-                                        <input type="hidden" name="score" value='<?php if (!isset($_SESSION[' score '])) {$_SESSION['score
-                                        '] = 0; echo $_SESSION['score ']; }else{echo $_SESSION['score '];}?>'>
-                                        <input type="hidden" name="score" value='<?php if (!isset($_SESSION[' question '])) {$_SESSION['question
-                                        '] = 1; echo $_SESSION['question ']; }else{echo $_SESSION['question '];}?>'>
-                                    </div>
-                                </form>
-                                <?php
-                                echo $_SESSION['report']['notNumber'];
-                                echo $_SESSION['report']['correct'];
-                                echo $_SESSION['report']['wrong'];
-                                ?>
-                            </div>
+                    </div>
+                    <div class="row">
+                        <hr>
+                        <div class="col-sm-12">
+                            <form action="./validate.php" method="post">
+                                <div class="form-group">
+                                    <label for="answer">
+                                        <h3>Answer:</h3>
+                                    </label>
+                                    <input class="form-control" type="text" name="userAnswer" id=answer autocomplete="off">
+                                    <input class="form-control btn btn-primary" type="submit" name="submit" value="Submit">
+                                    <input type="hidden" name="answer" value='<?php echo $answer?>'>
+                                    <input type="hidden" name="score" value='<?php if (!isset($_SESSION['score'])) {$_SESSION['score'] = 0; echo $_SESSION['score']; }else{echo $_SESSION['score'];}?>'>
+                                    <input type="hidden" name="score" value='<?php if (!isset($_SESSION['question'])) {$_SESSION['question'] = 1; echo $_SESSION['question']; }else{echo $_SESSION['question'];}?>'>
+                                </div>
+                            </form>
+                            <?php
+                            echo $_SESSION['report']['notNumber'];
+                            echo $_SESSION['report']['correct'];
+                            echo $_SESSION['report']['wrong'];
+                            ?>
                         </div>
                     </div>
                     <div class="game-footer">
@@ -122,5 +120,4 @@ switch($index) {
             </div>
         </div>
     </body>
-
 </html>
