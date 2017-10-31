@@ -1,6 +1,7 @@
 <?php 
 session_start();
 extract($_GET);
+session_unset();
 ?>
 <!DOCTYPE html>
 <html>

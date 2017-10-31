@@ -11,7 +11,8 @@ for ($x = 0; $x < count($line); $x++) {
     } 
 }
 if ($verified) {
-    echo "YOU DID IT <BR>";
+    header("location: index.php");
+    die();
 }
 else {
     header("location: login.php?error=true");
