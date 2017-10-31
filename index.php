@@ -42,9 +42,9 @@ switch($index) {
                 <div class="col-sm-6">
                     <div class="game-header">
                         <div class="row">
+                            <hr>
                             <div class="col-sm-12 bg-dark">
                                 <h1 class="game-title text-center">Math Game</h1>
-                                <hr>
                             </div>
                         </div>
                     </div>
@@ -93,8 +93,8 @@ switch($index) {
                     </div>
                     <div class="game-footer">
                         <div class="row">
+                            <hr>
                             <div class="col-sm-12">
-                                <hr>
                                 <div class="col-xs-6">
                                     <h4 class="text-left">
                                         <?php echo "Score: " . $_SESSION['score'] . " / " . $_SESSION['question']?>
