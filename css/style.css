@@ -1,0 +1,11 @@
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+.error {
+    color:red;
+}
+
+.correct {
+    color:green;
+}
