@@ -79,6 +79,7 @@ switch($index) {
                                         <h3>Answer:</h3>
                                     </label>
                                     <input class="form-control" type="text" name="userAnswer" id=answer autocomplete="off">
+                                    <br>
                                     <input class="form-control btn btn-primary" type="submit" name="submit" value="Submit">
                                     <input type="hidden" name="answer" value='<?php echo $answer?>'>
                                     <input type="hidden" name="score" value='<?php if (!isset($_SESSION['score'])) {$_SESSION['score'] = 0; echo $_SESSION['score']; }else{echo $_SESSION['score'];}?>'>
@@ -93,8 +94,8 @@ switch($index) {
                         </div>
                     </div>
                     <div class="game-footer">
+                    <hr>
                         <div class="row">
-                            <hr>
                             <div class="col-sm-12">
                                 <div class="col-xs-6">
                                     <h4 class="text-left">
@@ -111,7 +112,7 @@ switch($index) {
                             </div>
                             <div class="col-sm-12">
                                 <form action="login.php">
-                                    <button type="submit" class="btn btn-default form-control" >Logout</button>
+                                    <button type="submit" class="btn btn-default form-control">Logout</button>
                                 </form>
                             </div>
                         </div>
