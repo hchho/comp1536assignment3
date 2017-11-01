@@ -1,5 +1,16 @@
-body {
-    background-color: rgb(255, 255, 255);
+@import url("boostrap.min.css");
+body, html, .container {
+    background-color: lightgrey;
+    height: 100%;
+}
+
+.content {
+	background-color: white;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+	border-radius: 5px;
 }
 
 .error {
