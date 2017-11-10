@@ -106,7 +106,8 @@ switch($index) {
                                         } else {
                                             $questionNumber = $_SESSION['question'] - 1;
                                         }
-                                        echo "Score: " . $_SESSION['score'] . "/" . $questionNumber;?>
+                                        echo "Score: " . $_SESSION['score'] . "/" . $questionNumber;
+                                        ?>
                                     </h4>
                                 </div>
                                 <div class="col-xs-6">
