@@ -99,7 +99,14 @@ switch($index) {
                             <div class="col-sm-12">
                                 <div class="col-xs-6">
                                     <h4 class="text-left">
-                                        <?php echo "Score: " . $_SESSION['score']?>
+                                        <?php
+                                        $questionNumber;
+                                        if ($_SESSION['question'] - 1 < 0) {
+                                            $questionNumber = 0;
+                                        } else {
+                                            $questionNumber = $_SESSION['question'] - 1;
+                                        }
+                                        echo "Score: " . $_SESSION['score'] . "/" . $questionNumber;?>
                                     </h4>
                                 </div>
                                 <div class="col-xs-6">
