@@ -20,7 +20,7 @@ session_unset();
             <form class="form-horizontal" action="authenticate.php" method="post">
                 <div class="form-group">
                     <div class="row text-center">
-                        <div class="col-sm-3 text-left">
+                        <div class="col-sm-3 text-right">
                             <label for="email">Email: </label>
                         </div>
                         <div class="col-sm-8 text-left">
@@ -30,7 +30,7 @@ session_unset();
                 </div>
                 <div class="form-group">
                     <div class="row text-center">
-                        <div class="col-sm-3 text-left">
+                        <div class="col-sm-3 text-right">
                             <label for="password">Password: </label>
                         </div>
                         <div class="col-sm-8 text-left">
