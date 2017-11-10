@@ -82,7 +82,7 @@ switch($index) {
                                     <br>
                                     <input class="form-control btn btn-primary" type="submit" name="submit" value="Submit">
                                     <input type="hidden" name="answer" value='<?php echo $answer?>'>
-                                    <input type="hidden" name="score" value='<?php if (!isset($_SESSION['score'])) {$_SESSION['score'] = 0; echo $_SESSION['score']; }else{echo $_SESSION['score'];}?>'>
+                                    <input type="hidden" name="score" value='<?php if (!isset($_SESSION['score'])) {$_SESSION['score'] = 0; echo $_SESSION['score']; }else{echo $_SESSION['score'] - 1;}?>'>
                                     <input type="hidden" name="score" value='<?php if (!isset($_SESSION['question'])) {$_SESSION['question'] = 1; echo $_SESSION['question']; }else{echo $_SESSION['question'];}?>'>
                                 </div>
                             </form>
